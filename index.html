@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diamond Price Prediction</title>
+</head>
+<body>
+    <h1>Diamond Price Prediction</h1>
+    <form action="/predict" method="POST">
+        <label for="carat">Carat:</label>
+        <input type="text" id="carat" name="carat" required><br><br>
+        
+        <label for="cut">Cut:</label>
+        <select id="cut" name="cut" required>
+            <option value="1">Ideal</option>
+            <option value="2">Premium</option>
+            <option value="3">Good</option>
+            <option value="4">Very Good</option>
+            <option value="5">Fair</option>
+        </select><br><br>
+        
+        <label for="color">Color:</label>
+        <select id="color" name="color" required>
+            <option value="1">D</option>
+            <option value="2">E</option>
+            <option value="3">F</option>
+            <option value="4">G</option>
+            <option value="5">H</option>
+            <option value="6">I</option>
+            <option value="7">J</option>
+        </select><br><br>
+        
+        <label for="clarity">Clarity:</label>
+        <select id="clarity" name="clarity" required>
+            <option value="1">IF</option>
+            <option value="2">VVS1</option>
+            <option value="3">VVS2</option>
+            <option value="4">VS1</option>
+            <option value="5">VS2</option>
+            <option value="6">SI1</option>
+            <option value="7">SI2</option>
+            <option value="8">I1</option>
+        </select><br><br>
+        
+        <label for="depth">Depth:</label>
+        <input type="text" id="depth" name="depth" required><br><br>
+        
+        <label for="table">Table:</label>
+        <input type="text" id="table" name="table" required><br><br>
+        
+        <label for="x">x:</label>
+        <input type="text" id="x" name="x" required><br><br>
+        
+        <label for="y">y:</label>
+        <input type="text" id="y" name="y" required><br><br>
+        
+        <label for="z">z:</label>
+        <input type="text" id="z" name="z" required><br><br>
+        
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
